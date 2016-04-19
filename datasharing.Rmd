@@ -1,0 +1,61 @@
+---
+title: "Best practices for open and reproducible research"
+author: "Kenneth Daily, Sage Bionetworks"
+date: "April 19, 2016"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# What is Open and Reproducible?
+
+## FAIR
+
+- Findable
+- Accessible
+- Interoperable
+- Reproducible
+
+Wilkinson, M. D. et al. The FAIR Guiding Principles for scientific data management and stewardship. Sci. Data 3:160018 doi: [10.1038/sdata.2016.18](http://dx.doi.org/0.1038/sdata.2016.18) (2016).
+
+# Why Open and Reproducible?
+
+## Why Open and Reproducible
+- Easily allow other to build upon your work
+- Increase transfer of knowledge
+- Improve transparency, discourage fraudulent work
+- The funding agency [tells you to](https://www.nlm.nih.gov/NIHbmic/nih_data_sharing_policies.html)
+- Find collaborators 
+- Get credit for it ([you](http://f1000research.com/articles?tab=ALL&articleTypes=DATA_NOTE) [can](http://www.nature.com/sdata) [publish](http://www.gigasciencejournal.com/) [about it](http://www.mdpi.com/journal/data/about))
+
+## Why (not) Open and Reproducible
+- Risky for early-career researchers ([counterpoint](http://ivory.idyll.org/blog/2014-open-and-tenured.html))
+- Publisher limitations
+- [#researchparasites](https://twitter.com/search?q=%23researchparasites&src=typd) (NEJM 2016 http://dx.doi.org/10.1056/NEJMe1516564)
+- I don't get credit
+- Getting 'scooped'
+
+## Why (not) Open and Reproducible { .flexbox .vcenter}
+
+If you work openly, 'getting scooped' is plagarism.
+
+# How Open and Reproducible?
+
+## Getting started { .smaller }
+
+Organizing analyses so that they are reproducible is not easy. It requires diligence and a considerable investment of time: to learn new computational tools, and to organize and document analyses as you go.
+
+But **partially reproducible** is better than **not at all reproducible**. Just try to make your next paper or project better organized than the last.
+
+There are many paths toward reproducible research, and you shouldn’t try to change all aspects of your current practices all at once. Identify one weakness, adopt an improved approach, refine that a bit, and then move on to the next thing.
+
+## Getting started
+
+1. Plan before you start
+1. Organize and keep track of things
+1. Archive and share
+
+## Getting started
+
