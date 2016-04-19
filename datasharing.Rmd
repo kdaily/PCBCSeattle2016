@@ -57,7 +57,7 @@ Wilkinson, M. D. et al. The FAIR Guiding Principles for scientific data manageme
 
 Organizing analyses so that they are reproducible is not easy. It requires diligence and a considerable investment of time: to learn new computational tools, and to organize and document analyses as you go.
 
-But **partially reproducible** is better than **not at all reproducible**. Just try to make your next paper or project better organized than the last.
+But **partially reproducible** is better than **not at all reproducible**. Try to make your next paper or project better organized than the last.
 
 1. Plan before you start
 1. Organize and keep track of things
