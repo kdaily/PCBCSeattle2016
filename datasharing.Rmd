@@ -1,15 +1,25 @@
 ---
-title: "Best practices for open and reproducible research"
+title: "Best practices for open<br/>and reproducible research"
+subtitle: "How to share clean data"
 author: "Kenneth Daily, Sage Bionetworks"
 date: "April 19, 2016"
-output: ioslides_presentation
+output: 
+  ioslides_presentation:
+    widescreen: true
+    logo: ./img/sage_logo.png
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# What is Open and Reproducible?
+# Quiz!
+
+## Open Science
+
+How many people practice open science?
+
+# What is Open Data/Science?
 
 ## FAIR
 
@@ -18,7 +28,11 @@ knitr::opts_chunk$set(echo = FALSE)
 - Interoperable
 - Reproducible
 
+Both for Humans and our Computer Overlords.
+
+<div style="font-size: small">
 Wilkinson, M. D. et al. The FAIR Guiding Principles for scientific data management and stewardship. Sci. Data 3:160018 doi: [10.1038/sdata.2016.18](http://dx.doi.org/0.1038/sdata.2016.18) (2016).
+</div>
 
 # Why Open and Reproducible?
 
@@ -28,7 +42,7 @@ Wilkinson, M. D. et al. The FAIR Guiding Principles for scientific data manageme
 - Improve transparency, discourage fraudulent work
 - The funding agency [tells you to](https://www.nlm.nih.gov/NIHbmic/nih_data_sharing_policies.html)
 - Find collaborators 
-- Get credit for it ([you](http://f1000research.com/articles?tab=ALL&articleTypes=DATA_NOTE) [can](http://www.nature.com/sdata) [publish](http://www.gigasciencejournal.com/) [about it](http://www.mdpi.com/journal/data/about))
+- Get credit for it ([you](http://f1000research.com/articles?tab=ALL&articleTypes=DATA_NOTE) [can](http://www.nature.com/sdata) [publish](http://www.gigasciencejournal.com/) [it](http://www.mdpi.com/journal/data/about))
 
 ## Why (not) Open and Reproducible
 - Risky for early-career researchers ([counterpoint](http://ivory.idyll.org/blog/2014-open-and-tenured.html))
@@ -39,92 +53,36 @@ Wilkinson, M. D. et al. The FAIR Guiding Principles for scientific data manageme
 
 # How Open and Reproducible?
 
-## Getting started { .smaller }
+## Getting started {.build}
 
 Organizing analyses so that they are reproducible is not easy. It requires diligence and a considerable investment of time: to learn new computational tools, and to organize and document analyses as you go.
 
 But **partially reproducible** is better than **not at all reproducible**. Just try to make your next paper or project better organized than the last.
 
-## Getting started
-
 1. Plan before you start
 1. Organize and keep track of things
 1. Archive and share
 
+[Baby Steps for the Open Curious](https://practicaldatamanagement.wordpress.com/2014/10/23/baby-steps-for-the-open-curious/)
+
 # Data Sharing Best Practices
 
-## Be consistent.
+## Data sharing | [click me!](http://kdaily.github.io/datasharing/pres.html)
 
-- Categorical variables (`M`, `male`, `Male`)
-- Fixed code for missing values (`NA` = Not Applicable or Not Available?)
-- Covariate/variable naming (the column names)
-- Subject IDs (`1`, `cell1`, `Cell1`, `The first cell`)
-- Data layout
-- File names
-- Dates
-- Note-taking
+Let's say you have some data (not necessarily big data) that you want to share.
 
-https://kdaily.github.io/dataorg/pages/consistency.html
+These best practices work if whether you are sharing with a computational colleague or with a larger community.
 
-## Save data in text files (csv)
+## Review
 
-- xls is proprietary
-- Text works in many programs (including Excel)
+- [Consistency](https://kdaily.github.io/dataorg/pages/consistency.html)
+- [Plain text](https://kdaily.github.io/dataorg/pages/csv_files.html)
+- [Make them rectangles](https://kdaily.github.io/dataorg/pages/rectangle.html)
+- [Take care with dates](https://xkcd.com/1179/)
+- [Data dictionary](https://kdaily.github.io/dataorg/pages/dictionary.html)
+- [Share it and/or back it up - Synapse](https://www.synapse.org/)
 
-https://kdaily.github.io/dataorg/pages/csv_files.html
-
-## Dates. | ([xkcd.com](https://xkcd.com/1179/))
-
-<center>
-<img src="https://imgs.xkcd.com/comics/iso_8601.png" width="40%" alt="XKCD Dates">
-</center>
-
-## Dates.
-
-In Excel, use plain text column for dates, or proceed with caution.
-
-(e.g., everyone's favorite gene, "10/04/2015"")
-
-## No empty cells.
-
-Fill them in.
-
-Debatable...
-
-https://kdaily.github.io/dataorg/pages/no_empty_cells.html
-
-## Make it a rectangle.
-
-Spreadsheets are inherently rectangular.
-
-Maybe, you need multiple rectangles of data (don't duplicate info across)
-
-If you can't do it with one or more rectangles, spreadsheets are not the answer.
-
-https://kdaily.github.io/dataorg/pages/rectangle.html
-
-## Create a data dictionary.
-* The exact variable (column) name as in the data file
-* A version of that name that might be used for plotting, summarizing
-* A longer explanation of what the variable represents.
-* The measurement units.
-* Expected values (range of min and max, which text, etc.)
-
-This is meta*data*, so what shape should it be in?
-
-https://kdaily.github.io/dataorg/pages/dictionary.html
-
-## No cell formatting.
-
-No font color or highlighting as data (turn it into a column).
-
-It's OK ONLY IF it's not in raw data!
-
-https://kdaily.github.io/dataorg/pages/no_highlighting.html
-
-## Sharing and archiving | [Synapse](https://www.synapse.org/)
-
-We are:
+## Sharing with [Synapse](https://www.synapse.org/) | We are:
 
 1. **F**indable
 1. **A**ccessible
@@ -132,3 +90,18 @@ We are:
 1. **R**eusable
 
 Other things exist too [osf.io](www.osf.io), [Data Dryad](http://www.datadryad.org/), [Figshare](www.figshare.com)
+
+## Sharing with [Synapse](https://www.synapse.org/)
+
+<img src='img/synapseoverview.png' width='95%'>
+
+## Sharing with [Synapse](https://www.synapse.org/) | We facilitate:
+
+1. Data storage (free!)
+1. Data sharing (private, public, or somewhere in between)
+1. Documentation (Wikis)
+1. Provenance (tracking steps to generate)
+1. Attribution (I did something!)
+1. Citation (DOIs)
+
+<div style='font-size: small'>Other people provide these too.</div>
