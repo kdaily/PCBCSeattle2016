@@ -35,11 +35,7 @@ Wilkinson, M. D. et al. The FAIR Guiding Principles for scientific data manageme
 - Publisher limitations
 - [#researchparasites](https://twitter.com/search?q=%23researchparasites&src=typd) (NEJM 2016 http://dx.doi.org/10.1056/NEJMe1516564)
 - I don't get credit
-- Getting 'scooped'
-
-## Why (not) Open and Reproducible { .flexbox .vcenter}
-
-If you work openly, 'getting scooped' is plagarism.
+- Getting 'scooped' (that's plagarism! Use a [license](www.choosealicense.com))
 
 # How Open and Reproducible?
 
@@ -49,13 +45,90 @@ Organizing analyses so that they are reproducible is not easy. It requires dilig
 
 But **partially reproducible** is better than **not at all reproducible**. Just try to make your next paper or project better organized than the last.
 
-There are many paths toward reproducible research, and you shouldn’t try to change all aspects of your current practices all at once. Identify one weakness, adopt an improved approach, refine that a bit, and then move on to the next thing.
-
 ## Getting started
 
 1. Plan before you start
 1. Organize and keep track of things
 1. Archive and share
 
-## Getting started
+# Data Sharing Best Practices
 
+## Be consistent.
+
+- Categorical variables (`M`, `male`, `Male`)
+- Fixed code for missing values (`NA` = Not Applicable or Not Available?)
+- Covariate/variable naming (the column names)
+- Subject IDs (`1`, `cell1`, `Cell1`, `The first cell`)
+- Data layout
+- File names
+- Dates
+- Note-taking
+
+https://kdaily.github.io/dataorg/pages/consistency.html
+
+## Save data in text files (csv)
+
+- xls is proprietary
+- Text works in many programs (including Excel)
+
+https://kdaily.github.io/dataorg/pages/csv_files.html
+
+## Dates. | ([xkcd.com](https://xkcd.com/1179/))
+
+<center>
+<img src="https://imgs.xkcd.com/comics/iso_8601.png" width="40%" alt="XKCD Dates">
+</center>
+
+## Dates.
+
+In Excel, use plain text column for dates, or proceed with caution.
+
+(e.g., everyone's favorite gene, "10/04/2015"")
+
+## No empty cells.
+
+Fill them in.
+
+Debatable...
+
+https://kdaily.github.io/dataorg/pages/no_empty_cells.html
+
+## Make it a rectangle.
+
+Spreadsheets are inherently rectangular.
+
+Maybe, you need multiple rectangles of data (don't duplicate info across)
+
+If you can't do it with one or more rectangles, spreadsheets are not the answer.
+
+https://kdaily.github.io/dataorg/pages/rectangle.html
+
+## Create a data dictionary.
+* The exact variable (column) name as in the data file
+* A version of that name that might be used for plotting, summarizing
+* A longer explanation of what the variable represents.
+* The measurement units.
+* Expected values (range of min and max, which text, etc.)
+
+This is meta*data*, so what shape should it be in?
+
+https://kdaily.github.io/dataorg/pages/dictionary.html
+
+## No cell formatting.
+
+No font color or highlighting as data (turn it into a column).
+
+It's OK ONLY IF it's not in raw data!
+
+https://kdaily.github.io/dataorg/pages/no_highlighting.html
+
+## Sharing and archiving | [Synapse](https://www.synapse.org/)
+
+We are:
+
+1. **F**indable
+1. **A**ccessible
+1. **I**nteroperable
+1. **R**eusable
+
+Other things exist too [osf.io](www.osf.io), [Data Dryad](http://www.datadryad.org/), [Figshare](www.figshare.com)
