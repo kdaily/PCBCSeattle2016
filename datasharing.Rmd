@@ -105,3 +105,11 @@ Other things exist too [osf.io](www.osf.io), [Data Dryad](http://www.datadryad.o
 1. Citation (DOIs)
 
 <div style='font-size: small'>Other people provide these too.</div>
+
+## Thank you!
+
+Research [Mark Wahlberg](https://twitter.com/ResearchMark) says:
+
+<div class="centered">
+<img src='https://pbs.twimg.com/media/Cdqu3TcUEAAoDde.jpg:large' width='60%'>
+</div>
